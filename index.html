@@ -51,6 +51,10 @@ header {
     text-align: center;
     position: relative;
     min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header::before {
@@ -74,8 +78,12 @@ header h1 {
 
 header h2 {
     font-weight: normal;
+    text-align: center;
 }
 
+header p {
+    text-align: center;
+}    
 .container {
     width: 90%;
     max-width: 1100px;
@@ -127,6 +135,11 @@ footer {
     text-align: center;
     padding: 20px;
     background: #eee;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
 }
 </style>
 </head>
