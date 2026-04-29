@@ -11,6 +11,35 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
+    
+nav {
+    background: #0b3c5d;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}    
 
 header {
     background: url('banner.png') center no-repeat;
@@ -93,6 +122,13 @@ footer {
 
 <body>
 
+<nav>
+    <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+    </ul>
+</nav>
+    
 <header>
     <h1>From Prototype to Practice</h1>
 
@@ -107,8 +143,8 @@ footer {
 
 <div class="container">
 
-<h2 class="section-title">Workshop Overview</h2>
-
+<h2 id="overview" class="section-title">Workshop Overview</h2>
+    
 <p>
 Health systems around the world are rapidly moving from experimenting with AI to deploying it in real clinical and operational settings. Yet turning a promising prototype into a trusted, sustainable, and human-centered solution remains one of the hardest challenges in healthcare AI.
 </p>
@@ -129,8 +165,8 @@ This highly interactive workshop is designed for researchers, clinicians, implem
 
 <div class="container">
 
-<h2 class="section-title">Organizers</h2>
-
+<h2 id="organizers" class="section-title">Organizers</h2>
+    
 <div class="organizers">
 
 <div class="card">
