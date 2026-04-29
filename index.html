@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AIME 2026 Workshop</title>
+<title>From Prototype to Practice | Human–AI Systems in Healthcare</title>
 
 <style>
 body {
@@ -13,10 +13,25 @@ body {
 }
 
 header {
-    background: #0b3c5d;
+    background: url('banner.png') center/cover no-repeat;
     color: white;
-    padding: 60px 20px;
+    padding: 100px 20px;
     text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+header * {
+    position: relative;
 }
 
 header h1 {
@@ -76,15 +91,17 @@ footer {
 <body>
 
 <header>
-    <h1>AIME 2026</h1>
-    <h2>24th International Conference on Artificial Intelligence in Medicine</h2>
-    <p>Ottawa, Canada</p>
+    <h1>From Prototype to Practice</h1>
 
-    <h2 style="margin-top:30px;">
-    From Prototype to Practice: Implementing Trustworthy Human–AI Systems in Healthcare
+    <h2>
+    Implementing Trustworthy Human–AI Systems in Healthcare
     </h2>
 
     <p><strong>Workshop W5 | Full Day</strong></p>
+
+    <p>
+    Presented at the 24th International Conference on Artificial Intelligence in Medicine (AIME 2026), Ottawa, Canada
+    </p>
 </header>
 
 <div class="container">
